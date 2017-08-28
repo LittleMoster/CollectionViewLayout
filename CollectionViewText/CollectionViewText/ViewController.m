@@ -83,8 +83,11 @@
    
 }
 
--(CGFloat)waterflowLayout:(CollectionViewLayoutType)waterflowLayout heightForItemAtIndex:(NSUInteger)index itemWidth:(CGFloat)itemWidth
+-(CGFloat)waterflowLayout:(CollectionViewLayoutType)flowLayout heightForItemAtIndex:(NSUInteger)index itemWidth:(CGFloat)itemWidth
 {
+    if (waterflowLayout==WaterflowLayout) {
+        return (arc4random()%+1)*40;
+    }
     return  60;
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath

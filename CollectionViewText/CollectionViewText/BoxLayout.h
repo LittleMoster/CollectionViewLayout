@@ -29,7 +29,7 @@ typedef enum
  */
 @required
 //必须实现的代理方法
-- (CGFloat)waterflowLayout:(CollectionViewLayoutType)waterflowLayout heightForItemAtIndex:(NSUInteger)index itemWidth:(CGFloat)itemWidth;
+- (CGFloat)waterflowLayout:(CollectionViewLayoutType)flowLayout heightForItemAtIndex:(NSUInteger)index itemWidth:(CGFloat)itemWidth;
 @optional;
 /**
  *  用于返回列数(瀑布流布局)
